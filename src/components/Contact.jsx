@@ -27,10 +27,10 @@ const Contact = () => {
 
                         <div className="contact-info mt-8">
                             <p className="info-item">
-                                <span className="info-label">Email:</span> info@socialyai.com
+                                <span className="info-label">Email:</span> info@socialymail.com
                             </p>
                             <p className="info-item">
-                                <span className="info-label">Support:</span> support@socialyai.com
+                                <span className="info-label">Support:</span> support@socialymail.com
                             </p>
                         </div>
                     </div>

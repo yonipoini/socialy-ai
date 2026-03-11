@@ -20,7 +20,7 @@ const Careers = () => {
                     <div className="glass-panel" style={{ padding: '4rem', marginTop: '3rem', textAlign: 'center' }}>
                         <h2 className="mb-4">No Open Roles Currently</h2>
                         <p style={{ color: 'var(--text-secondary)' }}>
-                            If you believe you'd be a great fit, feel free to drop us a line at <a href="mailto:careers@socialyai.com" style={{ color: 'var(--accent-primary)' }}>careers@socialyai.com</a>.
+                            If you believe you'd be a great fit, feel free to drop us a line at <a href="mailto:careers@socialymail.com" style={{ color: 'var(--accent-primary)' }}>careers@socialymail.com</a>.
                         </p>
                     </div>
                 </div>
