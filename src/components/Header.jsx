@@ -35,6 +35,7 @@ const Header = () => {
                     <Link to="/content-marketing" className="nav-link" onClick={() => setMenuOpen(false)}>Content Marketing</Link>
                     <Link to="/social-media" className="nav-link" onClick={() => setMenuOpen(false)}>Social Media</Link>
                     <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About</Link>
+                    <Link to="/consult" className="nav-link" onClick={() => setMenuOpen(false)}>Consultation</Link>
                     <a href="/#contact" className="btn btn-primary btn-sm" onClick={() => setMenuOpen(false)}>Let's Talk</a>
                 </nav>
 

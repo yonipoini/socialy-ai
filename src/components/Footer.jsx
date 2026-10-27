@@ -20,6 +20,7 @@ const Footer = () => {
                         <h3>Company</h3>
                         <Link to="/about">About</Link>
                         <Link to="/careers">Careers</Link>
+                        <Link to="/consult">Booked Consultation</Link>
                         <a href="mailto:info@socialymail.com">Contact</a>
                     </div>
                     <div className="link-group">

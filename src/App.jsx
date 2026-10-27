@@ -11,6 +11,7 @@ import About from './pages/About';
 import Careers from './pages/Careers';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
+import ConsultationLanding from './pages/ConsultationLanding';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/consult" element={<ConsultationLanding />} />
+          <Route path="/appointment" element={<ConsultationLanding />} />
+          <Route path="/consultation" element={<ConsultationLanding />} />
         </Routes>
       </main>
 
