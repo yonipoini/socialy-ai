@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Vapi from '@vapi-ai/web';
-import { VAPI_ASSISTANT_ID, getAssistantForLanguage, vapiAssistantConfig } from '../config/vapiAssistant';
+import { VAPI_ASSISTANT_ID, VAPI_PUBLIC_KEY, getAssistantForLanguage, vapiAssistantConfig } from '../config/vapiAssistant';
 import './VapiVoiceAgent.css';
 
 const VapiVoiceAgent = ({ t, currentLang }) => {
@@ -107,10 +107,10 @@ const VapiVoiceAgent = ({ t, currentLang }) => {
 
   const handleStartCall = async () => {
     setErrorMessage('');
-    const keyToUse = import.meta.env.VITE_VAPI_PUBLIC_KEY || localStorage.getItem('vapi_public_key');
+    const keyToUse = import.meta.env.VITE_VAPI_PUBLIC_KEY || VAPI_PUBLIC_KEY;
 
     if (!keyToUse) {
-      setErrorMessage('Vapi Public Key is not configured yet. Please configure VITE_VAPI_PUBLIC_KEY in project environment variables or dial directly.');
+      setErrorMessage('Voice connection is not available right now. Please call directly.');
       return;
     }
 

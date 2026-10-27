@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Vapi from '@vapi-ai/web';
-import { VAPI_INBOUND_ASSISTANT_ID } from '../config/vapiInboundAssistant';
+import { VAPI_INBOUND_ASSISTANT_ID, VAPI_PUBLIC_KEY } from '../config/vapiInboundAssistant';
 import './Contact.css';
 
 const Contact = () => {
@@ -95,9 +95,9 @@ const Contact = () => {
         e.preventDefault();
         setErrorMessage('');
 
-        const key = import.meta.env.VITE_VAPI_PUBLIC_KEY || localStorage.getItem('vapi_public_key');
+        const key = import.meta.env.VITE_VAPI_PUBLIC_KEY || VAPI_PUBLIC_KEY;
         if (!key) {
-            setErrorMessage('Vapi Public Key is not configured yet. Please configure VITE_VAPI_PUBLIC_KEY in project environment variables or dial directly.');
+            setErrorMessage('Voice connection is currently unavailable. Please call directly.');
             return;
         }
 

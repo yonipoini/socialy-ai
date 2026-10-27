@@ -1,3 +1,4 @@
+export const VAPI_PUBLIC_KEY = "29787876-5440-422c-a90d-c42ff4c61d8d";
 export const VAPI_ASSISTANT_ID = "d63a7f68-510d-4374-8846-18c38d5fa2f4";
 export const VAPI_ORG_ID = "521f6638-fb5a-4679-a757-0014210d499b";
 
